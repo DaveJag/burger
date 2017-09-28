@@ -1,0 +1,114 @@
+ html {
+ 	background-color: yellow;
+ }
+
+ body {
+ 	width: 75%;
+	margin: 0 auto; 
+    margin-top: 60px;
+ 	background-color: #DF1F3D;
+ }
+
+ .container {
+ 	border: 3px solid orange;
+ 	width: 90%;
+ }
+
+ .newburger {
+ 	width: 40%;
+ 	border: 2px dotted blue;
+ 	float: left;
+ }
+
+.addburger {
+	clear: both;
+	display: block;
+	border: 3px solid yellow;
+	margin: 20px;
+	padding: 10px;
+}
+
+ .devouredburger {
+ 	width: 40%;
+ 	border: 2px dotted green;
+ 	float: right;
+ }
+
+ #cute_burger {
+ 	display: block;
+    margin: auto;
+ }
+
+ h1 {
+ 	text-align: center;
+ 	color: yellow;
+ 	font-family: "Comic Sans MS", Calibri, Arial;
+ 	font-size: 65px;
+ 	margin-top: 10px;
+ }
+
+h2 {
+  	text-align: center;
+ 	font-family: "Comic Sans MS", Calibri, Arial;
+ 	font-size: 40px;
+ 	margin-top: 10px;
+ }
+
+ .burgerAvailable {
+ 	font-family: "Comic Sans MS", Calibri, Arial;
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+
+ 	border-radius: 5px;
+ 	width: 70%;
+ 	margin: 10px;
+ 	padding: 5px;
+ 	background-color: #FFFFFF;
+ 	border: none;
+ }
+
+ .burgerAvailable:hover {
+ 	background-color: #FAF2AC;
+ }
+
+ .burgerEaten {
+ 	font-family: "Comic Sans MS", Calibri, Arial;
+ 	font-weight: normal;
+ 	font-size: 20px;
+ 	text-align: center;
+
+ 	border-radius: 5px;
+ 	margin: 10px;
+ 	padding: 5px;
+ 	background-color: #ffd1c9;
+ }
+
+ 
+
+ .formContainer {
+ 	background-color: orange;
+ }
+
+ .addBurgerButton {
+ 	text-align: center;
+ 	font-family: "Comic Sans MS", Calibri, Arial;
+ 	font-weight: bold;
+ 	font-size: 20px;
+ 	text-align: center;
+
+ 	border-radius: 5px;
+ 	width: 50%;
+ 	margin: 0;
+ 	padding: 10px;
+ 	background-color: yellow;
+ 	border: none;
+ }
+
+.controls {
+	text-align: center;
+}
+
+
+
+
