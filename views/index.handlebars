@@ -1,41 +1,37 @@
 <h2>Welcome to</h2>
 <h1> Eat-Da-Burger!</h1>
-
 <main>
   <div class="container">
     <div class="newburger">
-      <p>newburger div. </p>
-        {{#each burgers}}
-          {{#unless this.devoured}}
-            <div>
-              <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
-                <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
-              </form>
-            </div>
-          {{/unless}}
-        {{/each}}
+      <p class = "instructions">Click on a burger to devour it!</p>
+      {{#each burgers}}
+      {{#unless this.devoured}}
+      <div>
+        <form action="/burgers/{{this.id}}?_method=PUT" method="POST">
+          <button type="submit" class='burgerAvailable'> {{this.burger_name}}</button>
+        </form>
+      </div>
+      {{/unless}}
+      {{/each}}
     </div>
     
     <div class="devouredburger">
-      <p>devouredburger div. </p>
-        {{#each burgers}}
-          {{#if this.devoured}}
-            <div class='burgerEaten'>
-              <div>
-                {{this.burger_name}}
-              </div>
-            </div>
-          {{/if}}
-        {{/each}}      
+      {{#each burgers}}
+      {{#if this.devoured}}
+      <div class='burgerEaten'>
+        <div>
+          {{this.burger_name}}
+        </div>
+      </div>
+      {{/if}}
+      {{/each}}
     </div>
-
   </div>
 </main>
-
 <div class = "addburger">
-<h2>Add A Burger Option</h2>
-    <form action="/burgers" method="POST">
-      <p class ="controls"><input type="text" id="name" size = "80" name="burger_name" placeholder="Type a new burger name here and press 'Add The Burger' button"></p>
-      <p class = "controls"><button type="submit" class="addBurgerButton">Add The Burger</button> </p>
-    </form>
+  <h2>Add A Burger Option</h2>
+  <form action="/burgers" method="POST">
+    <p class ="controls"><input type="text" id="name" size = "80" name="burger_name" placeholder="Type a new burger name here and press 'Add The Burger' button"></p>
+    <p class = "controls"><button type="submit" class="addBurgerButton">Add The Burger</button> </p>
+  </form>
 </div>

@@ -1,5 +1,3 @@
-// Dave Jagodowski - server.js file
-
 // Dependencies
 // =============================================================
 var express = require("express");

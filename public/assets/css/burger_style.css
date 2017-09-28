@@ -10,13 +10,18 @@
  }
 
  .container {
- 	border: 3px solid orange;
  	width: 90%;
  }
 
+.instructions {
+	color: white;
+	font-family: Arial;
+	font-size: 20px;
+	padding-left: 10px;
+}
+
  .newburger {
  	width: 40%;
- 	border: 2px dotted blue;
  	float: left;
  }
 
@@ -30,7 +35,6 @@
 
  .devouredburger {
  	width: 40%;
- 	border: 2px dotted green;
  	float: right;
  }
 
@@ -48,6 +52,7 @@
  }
 
 h2 {
+  	color: white;
   	text-align: center;
  	font-family: "Comic Sans MS", Calibri, Arial;
  	font-size: 40px;
